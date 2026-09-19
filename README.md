@@ -1,3 +1,9 @@
+<!-- DEVNEGANSMITH_PREVIEW_START -->
+<p align="center">
+  <img src="assets/devnegansmith-preview.jpg" alt="DevNeganSmith FiveM Resources" width="100%">
+</p>
+<!-- DEVNEGANSMITH_PREVIEW_END -->
+
 # DevNeganSmith - Disable Native Radio
 
 Recurso ligero y **framework independiente** para FiveM que desactiva la radio nativa de GTA V dentro de los vehículos.
