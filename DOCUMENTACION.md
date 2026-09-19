@@ -2,15 +2,44 @@
 
 ## Descripción
 
-`devnegansmith_disable_native_radio` es un recurso cliente para **FiveM Qbox/QBX** que mantiene desactivada la radio nativa de GTA V y evita interferencias con sistemas personalizados de música, radio, teléfono o audio.
+`devnegansmith_disable_native_radio` es un recurso client-side para FiveM que mantiene desactivada la radio nativa de GTA V y evita interferencias con sistemas personalizados de música, radio, teléfono o audio.
+
+## Compatibilidad de frameworks
+
+El recurso es **Standalone / Framework Independent**.
+
+- Standalone: ✅
+- ESX Legacy: ✅
+- QBCore: ✅
+- Qbox / QBX: ✅
+
+No utiliza `ESX`, `QBCore`, `qbx_core`, callbacks de framework, eventos de trabajo, inventarios ni base de datos.
 
 ## Funcionamiento
 
-El recurso bloquea los controles nativos de cambio de emisora, desactiva el control de radio del usuario y, al entrar en un vehículo, fuerza la emisora a `OFF` y deshabilita la radio del vehículo. Al detenerse el recurso, restaura los controles generales.
+El recurso utiliza natives de FiveM/GTA V para:
+
+- bloquear los controles nativos de cambio de emisora;
+- desactivar el control de radio del usuario;
+- desactivar la radio del frontend;
+- desactivar la radio móvil durante el gameplay;
+- forzar la emisora del vehículo a `OFF`;
+- deshabilitar la radio del vehículo.
+
+Al detenerse el recurso, restaura los controles generales de radio.
 
 ## Dependencias
 
-No requiere dependencias externas ni llamadas directas a `qbx_core`.
+No requiere dependencias externas.
+
+Tampoco requiere:
+
+- SQL;
+- `ox_lib`;
+- `ox_target`;
+- ESX;
+- QBCore;
+- Qbox/QBX.
 
 ## Instalación
 
@@ -22,22 +51,27 @@ resources/[devnegansmith]/devnegansmith_disable_native_radio
 ensure devnegansmith_disable_native_radio
 ```
 
-## Configuración
+## Posibles conflictos
 
-No requiere archivo de configuración.
+El recurso puede ser incompatible con sistemas de música que utilicen directamente la radio nativa de GTA V.
+
+Si un recurso de audio utiliza su propio sistema independiente, normalmente no debería existir conflicto.
 
 ## Pruebas recomendadas
 
 - entrada y salida de vehículos;
+- cambio de emisoras;
 - radio nativa apagada;
-- compatibilidad con teléfono o script de música;
-- reinicio del recurso.
+- interacción con teléfono o script de música;
+- reinicio del recurso;
+- detención manual del recurso.
 
 ## Autor
 
 - Autor: **DevNeganSmith**
 - Recurso: `devnegansmith_disable_native_radio`
-- Framework objetivo: **Qbox / QBX**
+- Tipo: **Standalone / Framework Independent**
+- Frameworks compatibles: **ESX Legacy, QBCore y Qbox/QBX**
 - Versión: `1.0.0`
 
 ## Licencia y términos
