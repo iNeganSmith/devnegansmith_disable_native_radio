@@ -72,7 +72,7 @@ Si un recurso de audio utiliza su propio sistema independiente, normalmente no d
 - Recurso: `devnegansmith_disable_native_radio`
 - Tipo: **Standalone / Framework Independent**
 - Frameworks compatibles: **ESX Legacy, QBCore y Qbox/QBX**
-- Versión: `1.0.0`
+- Versión: `1.0.1`
 
 ## Licencia y términos
 
